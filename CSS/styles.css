@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    display: grid;
+    justify-content:center;
+    margin: 0;
+
+}
+
+.header_container_tittle {
+    width: 170px;
+    margin: 50px auto 80px;
+    text-align: center;
+    font-size: 1rem;
+    display: grid;
+    align-content: center;
+    grid-template-rows: row;
+}
+
+.logo_tittle_wiki {
+    margin: 0 0 8px 0;
+}
+
+.logo_tittle_wiki img {
+    width: 100%;
+}
+
+.wiki_logo img {
+    width: 200px;
+}
+
+.main_section_languages {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #36c;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.main_section_languages span {
+    color: #54595d;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 4px;
+
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    padding: 4px 10px;
+}
+
+.languages:hover {
+    background-color: #eaecf0;
+}
+.languages_1, .languages_5 {
+    width: 390px;
+}
+.languages_2, .languages_4 {
+    width: 490px;
+}
+.languages_3 {
+    width: 520px;
+}
+ 
+ 
+.languages_1, 
+.languages_2,
+.languages_3,
+.languages_4,
+.languages_5 {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px auto 16px;    
+}
+    
+.main_input {
+    width: 100%
+}   
+
+.main_input_container {
+    width: 430px;
+    height: 44px;
+    border: 1px solid #a2a9b1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+.main_input_container:hover {
+    border-color: #72777d;
+}
+.main_input_container:focus {
+    border-color: #36c;
+    box-shadow: 0 0 0 1px #36c;
+    outline: 0;
+}
+.search_icon {
+    width: 75px;
+    height: auto;
+    background-color: #36c;
+    border-color: #36c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.search_icon:hover {
+    background-color: #447ff5;
+    border-color: #447ff5;
+}
+.search_icon img {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.search_input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    padding: 5px;
+    margin: 5px;
+}
+
+.contain_languages_list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    
+}
+.contain_languages_list label {
+    font-size: 0.75rem;
+    color: #54595d;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 5px;
+
+}
+.languages_list {
+    border: none;
+    outline: none;
+    width: 15px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    color: #54595d;
+    
+}
+
+.main_read_wikipedia {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container_read_wikipedia {
+    width: 280px;
+    height: 40px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin: 36px auto ;
+    padding: 8px 1px;
+    border-radius: 2px;
+    border: 1px solid #a2a9b1;
+    font-family: sans-serif;
+    cursor: pointer;
+    box-shadow: 0 10px 0 10px white ;
+    z-index: 2;    
+}
+.container_read_wikipedia  span {
+    color: #36c;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0;
+}
+.icon_language {
+    width: 24px;
+    height: auto;
+}
+
+.icon_blue_row {
+    width: 16px;
+    height: auto;
+}
+
+.container_read_wikipedia:hover {
+    background-color: white;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 550px 1fr;
+    margin: 0 auto ;
+    border-bottom: 1px solid #a2a9b1;
+    border-top: 1px solid #a2a9b1;
+    width: 99%;
+    padding: 50px 0;
+}
+
+.logo_fundation {
+    width: 40px;
+    margin: 0 10px;
+    
+}
+
+ul li {
+    list-style: none;
+}
+
+.aside_containe_donate_download {
+    margin: 0 80px;
+}
+
+
+.aside_donate, .aside_download_wikipedia {
+    padding: 0 10px;
+}
+
+.aside_donate, .aside_download_wikipedia {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: #54595d;
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin-right: 40px;
+}
+
+.aside_donate div, .aside_download_wikipedia div  {
+    padding-right: 20px;
+}
+
+.aside_donate div a {
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.aside_donate div p {
+    margin: 0;
+}
+.aside_download_wikipedia {
+    background-color: #f8f9fa;
+    margin-top: 24px; 
+    padding-top: 12px;
+    border-radius: 4px;
+}
+
+.logo_wikipedia_app_img {
+    width: 30px;
+    
+}
+
+.logo_wikipedia_app {
+    background-color: white;
+    margin: 0 10px 0 0;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 180px;
+    box-shadow: 0 2px 0 0px  #eaecf0;
+    border: 1px solid  #eaecf0;
+}
+
+.button_download {
+    
+    display: flex;
+    flex-direction: row;
+}
+.aside_download_wikipedia a img {
+    height: 36px;
+    margin: 4px; 
+}
+
+.aside_other_resources {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 20px;
+
+}
+.aside_other_resources ul {
+    padding: 0;
+    margin: 0;
+}
+
+.aside_other_resources ul li {
+    margin: 0 0 24px 0;
+}
+
+.resources_aside img {
+    width: 36px;
+    margin-right: 10px;
+}
+
+.resources_aside {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    cursor: pointer;
+    padding: 4px 10px;
+}
+
+.resources_aside:hover {
+    background-color: #eaecf0;
+}
+
+.resources_aside a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resources_aside div {
+    color: #54595d;
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+.resources_aside div span {
+    color: #36c;
+}
+
+.resources_aside div p {
+    margin: 0;
+}
+
+.resources_aside a:hover {
+    text-decoration: none;
+}
+
+.middle_line {
+    background-color: #c8ccd1;
+    display: block;
+    position: relative;
+    max-width: 460px;
+    width: 80%;
+    margin: -3.5rem auto 3rem;
+    height: 1px;
+    z-index: 1;
+}
+
+.footer_list li:nth-child(2), .footer_list li:nth-child(3)  {
+    list-style: disc;
+}
+
+.footer_list {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.footer_list li {
+    padding-right: 40px;
+    font-size: 0.8rem;
+    color: #54595d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.footer_list li a {
+    font-size: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
